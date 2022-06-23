@@ -1,0 +1,664 @@
+/* ====================== COMMON ==================== */
+
+body {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* ====================== HEADER ==================== */
+
+#header {
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+}
+
+#top-header {
+    height: 35px;
+    border-bottom: 0.1px solid #363636;
+    display: none;
+}
+
+#top-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#top-header a:hover {
+    color: #ce4a43;
+}
+
+#support-time {
+    padding-left: 15px;
+}
+
+#support-phone {
+    padding-right: 5px;
+}
+
+#main-menu-logo {
+    padding: 26px 0px 26px 15px;
+    display: none;
+}
+
+ul#main-menu {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0px;
+    display: none;
+}
+
+ul#main-menu a {
+    display: block;
+    padding: 32px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul#main-menu a:hover {
+    color: #ce4a43;
+}
+
+.main-menu-toggle {
+    padding-left: 10px;
+}
+
+#icon {
+    display: flex;
+}
+
+#search {
+    padding-right: 15px;
+}
+
+#search a {
+    color: #ffffff;
+}
+
+#search a:hover {
+    color: #ce4a43;
+}
+
+#cart a {
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+#cart a:hover {
+    color: #ce4a43;
+}
+
+#cart-notification {
+    top: -12px;
+    left: 12px;
+}
+
+ul#main-menu .sub-menu {
+    background: #f9f9f9;
+    top: 85px;
+    padding: 10px 70px 10px 30px;
+    display: none;
+    z-index: 1;
+}
+
+ul#main-menu li:hover ul.sub-menu {
+    display: block;
+}
+
+ul#main-menu .sub-menu li a {
+    color: #000000;
+    display: block;
+    padding: 10px 5px;
+    text-transform: none;
+}
+
+ul#main-menu .sub-menu li a:hover {
+    color: #ce4a43;
+}
+
+
+/* ================= Responsive menu ==================== */
+
+#responsive-menu-logo {
+    padding: 10px 0px;
+}
+
+ul#responsive-menu {
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #000000;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+ul#responsive-menu>li:hover>a {
+    color: #ce4a43;
+}
+
+ul#responsive-menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+ul#responsive-menu .sub-menu {
+    background-color: #111111;
+    list-style: none;
+    display: none;
+}
+
+ul#responsive-menu .sub-menu li:hover a {
+    color: #ce4a43;
+}
+
+#responsive-menu-bar {
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 26px;
+}
+
+#responsive-menu-bar:hover,
+#responsive-menu-bar:focus {
+    cursor: pointer;
+}
+
+ul#responsive-menu .sub-menu-toggle {
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+ul#responsive-menu .sub-menu-toggle:hover,
+.sub-menu-toggle:focus {
+    cursor: pointer;
+}
+
+ul#responsive-menu .sub-menu-toggle.open {
+    transform: rotate(180deg);
+}
+
+
+/* ====================== WP_CONTENT ==================== */
+
+#wp-content {
+    background: #ffffff;
+    min-height: 700px;
+}
+
+ol.carousel-indicators li {
+    background-color: #000000;
+    opacity: 1;
+}
+
+ol.carousel-indicators .active {
+    background-color: #e2524a;
+    opacity: 1;
+}
+
+#service {
+    display: none;
+}
+
+#service-info {
+    padding: 40px 0px;
+}
+
+#service-info i {
+    color: #888787;
+}
+
+#service-info a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#service-info .service:hover i {
+    color: #e2524a;
+}
+
+#service-info .service:hover a {
+    color: #e2524a;
+}
+
+#productListTitle {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#productListTitle h3 {
+    font-size: 1.75rem;
+}
+
+.ratings i {
+    color: #cecece;
+}
+
+.rating-color {
+    color: #fbc634 !important
+}
+
+#newProductList .ratings {
+    font-size: 10px;
+}
+
+#newProductList .review-count {
+    font-size: 10px;
+}
+
+#newProductList .productTitle a {
+    color: #000000;
+}
+
+#newProductList .productItem:hover .productTitle a {
+    color: #e2524a;
+}
+
+#newProductList .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+}
+
+#newProductList .review-count a {
+    color: #000000;
+}
+
+#newProductList .review-count:hover a {
+    color: #e2524a;
+}
+
+#shoesCategory {
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#shoesCategoryTitle {
+    bottom: 30px;
+    right: 30px;
+}
+
+#shoesTitle {
+    font-size: 2rem;
+}
+
+#seeMore {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px 15px;
+}
+
+#seeMore:hover {
+    background-color: #ce4a43;
+}
+
+#bestSeller {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#bestSellerTitle {
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#bestSellerTitle h3 {
+    font-size: 1.75rem;
+}
+
+#bestSellerList .productTitle a {
+    color: #000000;
+}
+
+#bestSellerList .item:hover .productTitle a {
+    color: #e2524a;
+}
+
+#bestSellerList .item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#bestSellerList .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+}
+
+#bestSellerList .review-count a {
+    color: #000000;
+}
+
+#bestSellerList .review-count:hover a {
+    color: #e2524a;
+}
+
+#bestSellerList .ratings {
+    font-size: 10px;
+}
+
+#bestSellerList .review-count {
+    font-size: 10px;
+}
+
+#bestSellerList .owl-prev {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 0;
+    color: #ffffff;
+    margin: 0px 3px 0px 0px;
+}
+
+#bestSellerList .owl-prev:hover {
+    background-color: #e2524a;
+}
+
+#bestSellerList .owl-next {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 0;
+    color: #ffffff;
+    margin: 0px 0px 0px 3px;
+}
+
+#bestSellerList .owl-next:hover {
+    background-color: #e2524a;
+}
+
+#bestSellerPagination .page-link {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#bestSellerPagination .page-link:hover {
+    background-color: #e2524a;
+}
+
+#blog {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+#blogTitle {
+    padding-bottom: 20px;
+}
+
+#blogTitle h3 {
+    font-size: 1.75rem;
+}
+
+#blog .card-body {
+    padding-top: 10px;
+}
+
+#blog .card-title {
+    margin-top: 15px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#blogList {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#blogList .blogCategory a {
+    color: #000000;
+}
+
+#blogList .blogCategory:hover a {
+    color: #e2524a;
+}
+
+#blogList .blogItemTitle a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#blogList .blogItem:hover .blogItemTitle a {
+    color: #e2524a;
+}
+
+#blogListSeeMore {
+    font-size: 1.0rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 4px 48px;
+    color: #585858;
+    border: 1px solid #eeeeee;
+    margin-top: 20px;
+}
+
+#blogListSeeMore:hover {
+    color: #ffffff;
+}
+
+
+/* ============ Footer ============ */
+
+#footer {
+    background-color: #000000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ffffff;
+}
+
+#footer .footerItemTitle {
+    color: #e2524a;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footerContent {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footerContent a:hover {
+    color: #e2524a;
+}
+
+
+/* =========== Copyright ============ */
+
+#copyright {
+    background-color: #e2524a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#copyrightContent {
+    margin-bottom: 0px;
+    padding: 12px 0px;
+}
+
+
+/* ============= RESPONSIVE - MOBILE FIRST  =========== */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .col-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #service-info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #shoesCategory {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #newProductList .ratings {
+        font-size: 14px;
+    }
+    #newProductList .review-count {
+        font-size: 14px;
+    }
+    #newProductList .card-body {
+        padding-top: 20px;
+    }
+    #bestSellerList .card-body {
+        padding-top: 20px;
+    }
+    #bestSellerList .ratings {
+        font-size: 14px;
+    }
+    #bestSellerList .review-count {
+        font-size: 14px;
+    }
+    #bestSellerList .item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #blogListSeeMore {
+        margin-top: 50px;
+    }
+}
+
+
+/* Medium devices (tablet, 768px and up) */
+
+@media (min-width: 768px) {
+    #service {
+        display: block;
+    }
+    #seeMore {
+        font-size: 1.0rem;
+        padding: 10px 25px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #top-header {
+        display: flex;
+    }
+    ul#main-menu {
+        display: flex;
+    }
+    #main-menu-logo {
+        display: block;
+    }
+    #responsive-menu-logo {
+        display: none;
+    }
+    #responsive-menu {
+        display: none;
+    }
+    #responsive-menu-bar {
+        display: none;
+    }
+    #service-info {
+        padding: 80px 15px;
+    }
+    #productListTitle {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #productListTitle h3 {
+        font-size: 2.15rem;
+    }
+    #shoesCategory {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #shoesTitle {
+        font-size: 3rem;
+    }
+    #seeMore {
+        font-size: 1.0rem;
+        padding: 13px 33px;
+    }
+    #bestSeller {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    #bestSellerTitle h3 {
+        font-size: 2.15rem;
+    }
+    #bestSellerTitle {
+        padding-bottom: 40px;
+    }
+    #blog {
+        padding-top: 80px;
+        padding-bottom: 65px;
+    }
+    #blogTitle h3 {
+        font-size: 2.15rem;
+    }
+    #blogTitle {
+        padding-bottom: 40px;
+    }
+    #footer {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
+
+/* Extra large devices (large desktop, 1200px and up) */
+
+@media (min-width: 1200px) {}
